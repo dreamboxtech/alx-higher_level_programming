@@ -5,8 +5,8 @@ def main():
 	a = 1
 	b = 2
 	res = add(a, b)
-	print("{:d} + {:d} = {:d}".format(a, b, res))
+	print("{} + {} = {}".format(a, b, res))
 
 
-if __name__ == 'main':
+if __name__ == "main":
 	main()
