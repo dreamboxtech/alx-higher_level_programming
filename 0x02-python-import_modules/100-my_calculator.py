@@ -14,8 +14,8 @@ def run():
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
     op = args[1]
-    a = args[0]
-    b = args[1]
+    a = int(args[0])
+    b = int(args[1])
 
     if op == "+":
         print("{} + {} = {}".format(a, b, add(a, b)))
