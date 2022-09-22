@@ -3,12 +3,16 @@ import sys
 
 
 def run():
+    # sys.argv[1] = 32
+    # sys.argv[2] = 36
+    # sys.argv[3] = 89
+    # sys.argv[4] = 72
     args = sys.argv
     length = len(args) - 1
 
     def list_args(args):
         for index, value in enumerate(args[1:]):
-            print("{}: {}".format(index, value))
+            print("{}: {}".format(index + 1, value))
 
     if length == 0:
         print("{} arguments.".format(length))
