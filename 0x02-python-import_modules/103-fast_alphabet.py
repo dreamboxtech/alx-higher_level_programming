@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print(__import__("string").printable[36:62])
+print(__import__("string").ascii_uppercase)
