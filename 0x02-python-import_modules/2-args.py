@@ -4,7 +4,7 @@ import sys
 
 def run():
     args = sys.argv
-    length = len(args)
+    length = len(args) - 1
 
     def list_args(args):
         for index, value in enumerate(args):
