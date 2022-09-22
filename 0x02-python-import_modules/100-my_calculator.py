@@ -15,7 +15,7 @@ def run():
         exit(1)
     op = args[1]
     a = int(args[0])
-    b = int(args[1])
+    b = int(args[2])
 
     if op == "+":
         print("{} + {} = {}".format(a, b, add(a, b)))
