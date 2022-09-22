@@ -25,6 +25,9 @@ def run():
         print("{} * {} = {}".format(a, b, mul(a, b)))
     elif op == "/":
         print("{} / {} = {}".format(a, b, div(a, b)))
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
 
 
 if __name__ == "__main__":
