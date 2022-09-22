@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+import sys
 
-def run(*args):
+
+def run():
+    args = sys.argv
     length = len(args)
 
     def list_args(args):
@@ -12,7 +15,6 @@ def run(*args):
         list_args(args)
     elif length == 0:
         print("{} arguments.".format(length))
-        list_args(args)
     elif length > 1:
         print("{} arguments:".format(length))
         list_args(args)
