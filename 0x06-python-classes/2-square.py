@@ -6,11 +6,11 @@ class Square:
     """ A square is a four-sided shape"""
     def __init__(self, size=0):
         """Contructor set up goes here..."""
-        self.__size = size
-        try:
-            int(self.__size)
-        except TypeError:
-            print("size must be an integer")
-        if self.__size < 0:
-            raise Exception:
-                print("size must be >= 0")
+
+        if isinstance(self.__size, int):
+            if self.__size < 0:
+                raise Exception("size must be >= 0")
+            else:
+                self.__size = size
+        else:
+            raise TypeError("size must be an integer"):
