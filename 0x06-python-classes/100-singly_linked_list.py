@@ -29,7 +29,8 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        if not isinstance(value, Node()) or value is not None:
+        """sets next node"""
+        if not isinstance(value, Node()) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
@@ -37,7 +38,7 @@ class Node:
 class SinglyLinkedList:
     """A singly linked list class"""
     def __init__(self):
-  
+
         self.__head = None
 
     def sorted_insert(self, value):
