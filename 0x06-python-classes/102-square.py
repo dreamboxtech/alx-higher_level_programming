@@ -17,8 +17,8 @@ class Square:
     @size.setter
     def size(self, value):
         """Sets the value"""
-        if not isinstance(value, int):
-            raise TypeError("size must be a integer")
+        if not isinstance(value, int) or not isinstance(value, float):
+            raise TypeError("size must be a number")
 
         if value < 0:
             raise ValueError("size must be >= 0")
@@ -31,24 +31,24 @@ class Square:
 
     def __gt__(self, other):
         """defines greater than > """
-        return self.area > other.area()
+        return self.area() > other.area()
 
     def __ge__(self, other):
         """defines greater than equal >= """
-        return self.area >= other.area()
+        return self.area() >= other.area()
 
     def __lt__(self, other):
         """defines less than < """
-        return self.area < other.area()
+        return self.area() < other.area()
 
     def __le__(self, other):
         """defines less than > equals"""
-        return self.area <= other.area()
+        return self.area() <= other.area()
 
     def __eq__(self, other):
         """defines equal to == """
-        return self.area == other.area()
+        return self.area() == other.area()
 
     def __ne__(self, other):
         """defines not equal to != """
-        return self.area != other.area()
+        return self.area() != other.area()
