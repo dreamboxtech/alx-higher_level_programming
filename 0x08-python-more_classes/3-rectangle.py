@@ -63,6 +63,3 @@ class Rectangle:
             else:
                 res += '\n'
         return res
-
-ans = Rectangle(3, 5)
-print(ans)
