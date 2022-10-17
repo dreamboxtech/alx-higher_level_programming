@@ -52,7 +52,7 @@ class Rectangle:
 
     def __str__(self):
         """Handles string representation of the rectangle with a '#' """
-        if self.__width = 0 or self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ''
         res = ''
         for i in range(self.__height):
@@ -63,3 +63,6 @@ class Rectangle:
             else:
                 res += '\n'
         return res
+
+ans = Rectangle(3, 5)
+print(ans)
