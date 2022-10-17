@@ -3,7 +3,7 @@
 """
 
 
-class rectangle:
+class Rectangle:
     """A rectangle is defined by
     length multiplied by breadth
     """
