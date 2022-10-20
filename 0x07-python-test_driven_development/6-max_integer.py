@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Unit Testing series...
-   Test files in tests folder
+"""Module to find the max integer in a list
 """
 
 
