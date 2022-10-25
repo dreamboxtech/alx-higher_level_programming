@@ -5,6 +5,7 @@
 
 class BaseGeometry():
     """A non-empty geometry class"""
+    pass
 
     def area(self):
         """method raises exception for now"""
