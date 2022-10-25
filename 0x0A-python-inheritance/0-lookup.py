@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Function that returns attributes and methods in a class
+"""Function that returns attributes and 
+methods in a class
 """
 
 
@@ -9,4 +10,5 @@ def lookup(obj):
     Args:
         obj - the target object
     """
+    
     return dir(obj)
