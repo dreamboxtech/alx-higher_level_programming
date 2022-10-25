@@ -6,4 +6,5 @@ def read_file(filename=""):
     """This simple function accepts file name as arguement and prints
     out the content of the file"""
     with open(filename, encoding='utf-8') as f:
-        print(f.readlines())
+        for line in f:
+            print(line, end='')
