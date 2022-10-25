@@ -5,4 +5,4 @@
 
 def inherits_from(obj, a_class):
     """Function that returns True or False based on type"""
-    return isinstance(obj, a_class)
+    return isinstance(obj, a_class) and issubclass(type(obj), a_class)
