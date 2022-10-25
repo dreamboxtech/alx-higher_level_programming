@@ -2,9 +2,8 @@
 1-my_list subclass
 ==================
 
-class that inherits from list class and has a method print_sorted in it
-
-
+This subclass inherits the list class. The function print_sorted
+prints a list of ints in ascending order
 
 Import the function:
   >>> MyList = __import__('1-my_list').MyList
