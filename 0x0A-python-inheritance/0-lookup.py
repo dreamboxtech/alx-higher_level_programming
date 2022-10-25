@@ -6,5 +6,7 @@
 def lookup(obj):
     """This functions returns methods and 
     attributes of an object.
+    Args:
+        obj - the target object
     """
     return dir(obj)
