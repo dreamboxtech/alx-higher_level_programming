@@ -3,8 +3,9 @@
 """
 
 
-class BaseGeometry():
+class BaseGeometry:
     """A non-empty geometry class"""
+
     pass
 
     def area(self):
