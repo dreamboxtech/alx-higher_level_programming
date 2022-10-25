@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-"""An empty class BaseGeometry
+"""Module that has an empty base class BaseGeometry and empty class function
 """
 
 
 class BaseGeometry:
-    """A non-empty geometry class"""
+    """Class that defines a shape
+    """
 
     pass
 
     def area(self):
-        """method raises exception for now"""
-        raise Exception("area() is not implemeted")
+        """Function that calculates the area of a shapre
+        """
+
+        raise Exception("area() is not implemented")
