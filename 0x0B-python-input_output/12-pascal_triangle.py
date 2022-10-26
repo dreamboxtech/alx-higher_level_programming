@@ -8,13 +8,11 @@ def pascal_triangle(n):
     """
     if n <= 0:
         return []
-
-    triangles = [[1]]
-    while len(triangles) != n:
-        tri = triangles[-1]
-        tmp = [1]
-        for i in range(len(tri) - 1):
-            tmp.append(tri[i] + tri[i + 1])
-        tmp.append(1)
-        triangles.append(tmp)
-    return triangles
+    if n == 1:
+        return print([1])
+    triangle = [[1], [1, 1]]
+    angle = [1, 1]
+    for i in range(2, n):
+        angle = [1] + [sum(values) for values in zip(angle[1:], angle)] + [1]
+        triangle.append(angle)
+    print(*[x for x in triangle], sep='\n')
